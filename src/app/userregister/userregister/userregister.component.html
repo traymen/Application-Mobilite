@@ -1,0 +1,83 @@
+
+
+<header id="nav-wrapper">
+    <nav id="nav">
+        <div class="nav left">
+            <span class="gradient skew">
+                <h1 class="logo un-skew"><a href="#home">Espace Etudiant</a></h1>
+            </span>
+        </div>
+        <div class="nav right">
+            <a href="#home" class="nav-link active"><span class="nav-link-span"><span
+                        class="u-nav">Accueil</span></span></a>
+            <a href="#about" class="nav-link"><span class="nav-link-span"><span class="u-nav">À propos de
+                        nous</span></span></a>
+            <a href="#work" class="nav-link"><span class="nav-link-span"><span class="u-nav"> Nos
+                        services</span></span></a>
+            <a href="#contact" class="nav-link"><span class="nav-link-span"><span
+                        class="u-nav">Contactez-nous</span></span></a>
+        </div>
+    </nav>
+
+<div class="container">
+    <div class="left-column">
+        <img src="assets/mob.jpg" alt="Image">
+    </div>
+    <div class="right-column">
+        <div class="user-form">
+            <div class="user-form">
+                <h2 class="mm">Créer votre compte</h2>
+                <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label for="firstname">Prénom</label>
+                        <input type="text" id="firstname" name="firstname" [(ngModel)]="user.firstname" formControlName="firstname">
+                        <span style="color: red;" *ngIf="myForm.get('firstname')?.touched && myForm.get('firstname')?.hasError('required')">veuillez
+                            remplir
+                            ce champ</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Nom de famille</label>
+                        <input type="text" id="lastname" name="lastname" [(ngModel)]="user.lastname" formControlName="lastname">
+                        <span style="color: red;" *ngIf="myForm.get('lastname')?.touched && myForm.get('lastname')?.hasError('required')">veuillez
+                            remplir
+                            ce champ</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" [(ngModel)]="user.email" formControlName="email">
+                        <span style="color: red;" *ngIf="myForm.get('email')?.touched && myForm.get('email')?.hasError('required')">veuillez
+                            remplir
+                            ce champ</span>
+                            <span style="color: red;" *ngIf="myForm.get('email')?.hasError('email')">Adresse e-mail
+                                invalide</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" name="password" [(ngModel)]="user.password" formControlName="password" >
+                        <span  style="color: rgb(0, 183, 255);" *ngIf="
+      (myForm.get('password')?.hasError('required') ||
+        myForm.get('password')?.hasError('minlength') ||
+        myForm.get('password')?.hasError('customPassword'))">Veuillez remplir ce champ avec un mot de passe d'au moins 8 caractères contenant des chiffres et des majuscules.</span>
+                    </div>
+                    
+<button [ngClass]="{ 'button-invalid': myForm.invalid, 'button-valid': myForm.valid }"
+    [disabled]="myForm.invalid">Enregistrer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2023 Esprit Mobilité. All Rights Reserved.</p>
+    </div>
+</footer>
+</header>
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<!--
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar and Sidebar</title>
+
+<nav class="navbar">
+    <div class="container">
+<div class="i">
+    <img src="assets/téléchargement.png" alt="Image">
+</div>        <ul class="navbar-menu">
+            <li><a href="#">Welcome Admin</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="content">
+   
+</div>
+
+-->
+
+
+
+<header id="nav-wrapper">
+    <nav id="nav">
+        <div class="nav left">
+            <span class="gradient skew">
+                <h1 class="logo un-skew"><a href="#home">Espace Admin</a></h1>
+            </span>
+        </div>
+        <div class="nav right">
+            <a href="#home" class="nav-link active"><span class="nav-link-span"><span
+                        class="u-nav">Accueil</span></span></a>
+            <a href="#about" class="nav-link"><span class="nav-link-span"><span class="u-nav">À propos de
+                        nous</span></span></a>
+            <a href="#work" class="nav-link"><span class="nav-link-span"><span class="u-nav"> Nos
+                        services</span></span></a>
+            <a href="#contact" class="nav-link"><span class="nav-link-span"><span
+                        class="u-nav">Contactez-nous</span></span></a>
+        </div>
+    </nav>
+
+<div class="container">
+    <div class="left-column">
+        <img src="assets/si.png" alt="Image">
+    </div>
+    <div class="right-column">
+        <div class="user-form">
+            <div class="user-form">
+                <h2 class="mm">Se connecter</h2>
+                <form (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" name="password" [(ngModel)]="user.password" required>
+                    </div>
+                    <button type="submit">Se connecter</button>
+                </form>
+                <p class="signup">Don't have an account?
+                    <a rel="noopener noreferrer" href="/user" class="">Sign up</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2023 Esprit Mobilité. All Rights Reserved.</p>
+    </div>
+</footer>
+</header>
+
+
+
+

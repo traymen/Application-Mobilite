@@ -1,0 +1,156 @@
+.mobilite-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.row{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 20px 0;
+}
+
+.mobilite-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+}
+
+.property {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.property::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #555;
+}
+
+.inscription-button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inscription-button:hover {
+    background-color: #2980b9;
+}
+
+.primary {
+    background-color: #0f1a22;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.primary {
+    background-color: #2980b9;
+}
+
+.danger {
+    background-color: #db3434;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.danger:hover{
+
+    background-color: #b92929;
+}
+
+/* Exemple de couleurs personnalisées pour chaque propriété */
+.nomFac {
+    color: #e74c3c;
+    /* Rouge */
+}
+
+.pays {
+    color: #3498db;
+    /* Bleu */
+}
+
+.typeMobilite {
+    color: #2ecc71;
+    /* Vert */
+}
+
+.domaine {
+    color: #f39c12;
+    /* Jaune */
+}
+.option {
+    color: #196da5;
+}
+
+.dateD,
+.dateF {
+    color: #9b59b6;
+    /* Violet */
+}
+
+
+
+
+
+
+
+
+
+/* Reset some default styling */
+body,
+ul {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Style for the navbar */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-list li {
+    margin: 0 10px;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar-list li a:hover {
+    background-color: #555;
+}

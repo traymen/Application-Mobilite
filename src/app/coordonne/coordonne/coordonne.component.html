@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar and Sidebar</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-logo">Esprit Mobilité</div>
+            <ul class="navbar-menu">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">À Propos</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Déconnexion</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <h1 class="mb-70 text-primary">Veuillez remplir le formulaire suivant</h1>
+    </div>
+
+
+
+    <div class="container">
+        <div class="left-column">
+                        <form [formGroup]="myForm" class="coordonne-form" (ngSubmit)="onSubmit() ">
+
+            <div class="form-group">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" class="form-control" [(ngModel)]="coordonne.nom" formControlName="nom">
+                <span style="color: red;" *ngIf="myForm.get('nom')?.touched && myForm.get('nom')?.hasError('required')">veuillez
+                    remplir
+                    ce champ</span>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" class="form-control" [(ngModel)]="coordonne.prenom"
+                    formControlName="prenom">
+                <span style="color: red;"
+                    *ngIf="myForm.get('prenom')?.touched && myForm.get('prenom')?.hasError('required')">veuillez
+                    remplir ce champ</span>
+            
+            </div>
+            <div class="form-group">
+                <label for="gmail">Gmail:</label>
+                <input type="email" id="gmail" name="gmail" class="form-control" [(ngModel)]="coordonne.gmail"
+                    formControlName="gmail">
+                <span style="color: red;" *ngIf="myForm.get('gmail')?.touched && myForm.get('gmail')?.hasError('required')">veuillez
+                    remplir ce champ</span>
+                <span style="color: red;" *ngIf="myForm.get('gmail')?.hasError('email')">Adresse e-mail
+                    invalide</span>
+            </div>
+            <div class="form-group">
+                <label for="identifiantEsprit">Identifiant ESPIRIT:</label>
+                <input type="text" id="identifiantEsprit" name="identifiantEsprit" class="form-control"
+                    [(ngModel)]="coordonne.identifiantEsprit" formControlName="identifiantEsprit">
+                <span style="color: red;"
+                    *ngIf="myForm.get('identifiantEsprit')?.touched && myForm.get('identifiantEsprit')?.hasError('required')">veuillez
+                    remplir ce champ</span>
+                <span style="color: red;" *ngIf="myForm.get('identifiantEsprit')?.hasError('pattern')">Le format
+                    doit être 3 chiffres, 3 lettres, et 4 chiffres. Exemple : 213JMT6550</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="classeActuelle">Classe Actuelle:</label>
+                <input type="text" id="classeActuelle" name="classeActuelle" class="form-control"
+                    [(ngModel)]="coordonne.classeActuelle" formControlName="classeActuelle">
+                <span style="color: red;"
+                    *ngIf="myForm.get('classeActuelle')?.touched && myForm.get('classeActuelle')?.hasError('required')">veuillez
+                    remplir ce champ</span>
+            
+            </div>
+            <div class="form-group">
+                <label for="departement">Département:</label>
+                <input type="text" id="departement" name="departement" class="form-control" [(ngModel)]="coordonne.departement"
+                    formControlName="departement">
+                <span style="color: red;"
+                    *ngIf="myForm.get('departement')?.touched && myForm.get('departement')?.hasError('required')">veuillez
+                    remplir ce champ</span>
+            </div>
+            <div class="form-group">
+                <label for="option">Option:</label>
+                <input type="text" id="option" name="option" class="form-control" [(ngModel)]="coordonne.option"
+                    formControlName="option">
+                <span style="color: red;"
+                    *ngIf="myForm.get('option')?.touched && myForm.get('option')?.hasError('required')">veuillez
+                    remplir ce champ</span>
+            
+            </div>
+                        </form>
+        </div>
+        <div class="right-column">
+
+            <form [formGroup]="myForm" class="coordonne-forme" (ngSubmit)="onSubmit() ">
+               
+               
+                <div class="form-group">
+                    <label for="niveaua">Niveau Anglais:</label>
+                    <select id="niveaua" name="niveaua" class="form-control" [(ngModel)]="coordonne.niveauf"
+                        formControlName="niveauf">
+                        <option value="A1">A1</option>
+                        <option value="A2">A2</option>
+                        <option value="B1">B1</option>
+                        <option value="B2">B2</option>
+                        <option value="C1">C1</option>
+                        <option value="C2">C2</option>
+                    </select>
+                    <span style="color: red;" *ngIf="myForm.get('niveauf')?.hasError('required')">veuillez choisir un
+                        niveau</span>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="niveauf">Niveau Francais:</label>
+                    <select id="niveauf" name="niveauf" class="form-control" [(ngModel)]="coordonne.niveaua"
+                        formControlName="niveaua">
+                        <option value="A1">A1</option>
+                        <option value="A2">A2</option>
+                        <option value="B1">B1</option>
+                        <option value="B2">B2</option>
+                        <option value="C1">C1</option>
+                        <option value="C2">C2</option>
+                    </select>
+                    <span style="color: red;" *ngIf="myForm.get('niveaua')?.hasError('required')">veuillez choisir un
+                        niveau</span>
+
+                </div>
+                <div class="form-group">
+                    <label for="moyenne1">Moyenne 1ére annee faculte:</label>
+                    <input type="text" id="moyenne1" name="moyenne1" class="form-control"
+                        [(ngModel)]="coordonne.moyenne1" formControlName="moyenne1">
+                    <span style="color: red;"
+                        *ngIf="myForm.get('moyenne1')?.touched && myForm.get('moyenne1')?.hasError('required')">veuillez
+                        remplir ce champ</span>
+                    <span style="color: red;" *ngIf="myForm.get('moyenne1')?.hasError('min')">minimum 0</span>
+                    <span style="color: red;" *ngIf="myForm.get('moyenne1')?.hasError('max')">max 20</span>
+                    <span style="color: red;" *ngIf="myForm.get('moyenne1')?.hasError('pattern')">Veuillez entrer une
+                        valeur numérique valide (par exemple, 14.5)</span>
+
+
+
+                </div>
+                <div class="form-group">
+                    <label for="moyenne2">Moyenne 2ére annee faculte:</label>
+                    <input type="text" id="moyenne2" name="moyenne2" class="form-control"
+                        [(ngModel)]="coordonne.moyenne2" formControlName="moyenne2">
+                    <span style="color: red;"
+                        *ngIf="myForm.get('moyenne2')?.touched && myForm.get('moyenne2')?.hasError('required')">veuillez
+                        remplir ce champ</span>
+                    <span style="color: red;" *ngIf="myForm.get('moyenne2')?.hasError('min')">le nombre minimum est
+                        0</span>
+                    <span style="color: red;" *ngIf="myForm.get('moyenne2')?.hasError('max')">le nombre maximum est
+                        20</span>
+                    <span style="color: red;" *ngIf="myForm.get('moyenne2')?.hasError('pattern')">Veuillez entrer une
+                        valeur numérique
+                        valide (par exemple, 14.5)</span>
+
+                </div>
+                <div class="form-group">
+                    <label for="moyenne3">Moyenne 3ére annee faculte:</label>
+                    <input type="text" id="moyenne3" name="moyenne3" class="form-control"
+                        [(ngModel)]="coordonne.moyenne3" formControlName="moyenne3">
+                    <span style="color: red;"
+                        *ngIf="myForm.get('moyenne3')?.touched && myForm.get('moyenne3')?.hasError('required')">veuillez
+                        remplir ce champ</span>
+                    <span style="color: red;" *ngIf="myForm.get('moyenne3')?.hasError('min')">le nombre minimum est
+                        0</span>
+                    <span style="color: red;" *ngIf="myForm.get('moyenne3')?.hasError('max')">le nombre maximum est
+                        20</span>
+                    <span style="color: red;" *ngIf="myForm.get('moyenne3')?.hasError('pattern')">Veuillez entrer une
+                        valeur numérique
+                        valide (par exemple, 14.5)</span>
+
+                </div>
+                <div class="form-group">
+                    <label for="fichierCV">Les relevés de notes</label>
+                    <input type="file" id="fichierCV" name="fichierCV" class="form-control"
+                        [(ngModel)]="coordonne.fichierCV" formControlName="fichierCV">
+                    <span style="color: red;" *ngIf=" myForm.get('fichierCV')?.hasError('required')">veuillez
+                        choisir un fichier </span>
+                </div>
+                <button [ngClass]="{ 'button-invalid': myForm.invalid, 'button-valid': myForm.valid }"
+                    [disabled]="myForm.invalid">Enregistrer</button>
+            </form>
+<img src="assets/images.png" alt="Image">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+.mm{
+    margin-left: 85px;
+}
+.user-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color:#5f5656;
+        margin-top: 0px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgb(7, 57, 70);
+    color: white;
+    padding: 25px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    font-weight: bold;
+font-size: 24px;}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li:last-child {
+    margin-right: 350px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #ccc;
+}
+
+
+
+/* Content styles */
+.content {
+    margin-left: 250px;
+    /* La même largeur que la sidebar */
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* success-dialog.component.css */
+
+.custom-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*  a gauche te droite */
+
+.container {
+    display: flex;
+}
+
+.left-column {
+    flex: 1;
+    /* Prend autant d'espace que possible */
+    padding: 20px;
+}
+
+.right-column {
+    flex: 1;
+    /* Prend autant d'espace que possible */
+    padding: 20px;
+}
+
+
+
+
+/* Réinitialisation des marges et des rembourrages par défaut */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour l'en-tête de navigation */
+#nav-wrapper {
+    background-color: #333;
+    color: white;
+    width: 1200px;
+    height: 800px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-nav {
+    display: none;
+}
+
+/* Styles pour les liens de navigation */
+.nav.right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #00eeff;
+    /* Couleur au survol et en actif */
+}
+
+/* Styles pour les sections principales */
+main {
+    padding: 20px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btt{
+margin-left: 130px;}
+
+/* Ajoutez d'autres styles selon vos besoins pour les sections "home", "about", "work" et "contact" */
+
+
+
+
+
+
+.button-invalid {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 120px;
+}
+
+.button-valid {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+        margin-left: 120px;
+}
+
+/* Styles pour le survol */
+.button-invalid:hover {
+    background-color: darkred;
+}
+
+.button-valid:hover {
+    background-color: darkgreen;
+}
+
+
+
+
+
+
+
+
+
+
+

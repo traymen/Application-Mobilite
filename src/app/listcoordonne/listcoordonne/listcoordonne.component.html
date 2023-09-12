@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="#">Accueil</a></li>
+            <li><a routerLink="">Gestion des utilisateurs</a></li>
+            <li><a routerLink="/listadmin">Liste des mobilités</a></li>
+            <li><a href="#">Se déconnecter</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row">
+           
+                <h3 class="mb-5 text-primary">liste des coordonnées des etudiants </h3>
+        </div>
+        <div class="mobilite-list">
+            <div *ngFor="let mobilite of allcoordonne" class="mobilite-card">
+                <div class="score" data-label="Nom Fac:">
+                    <label for="nom">Score:</label>
+                
+                    <span class="nomFac">{{ mobilite.moyenne }}</span>
+                </div>
+                <div class="property text-secondary" data-label="Nom Fac:">
+                    <label for="nom">Nom:</label>
+    
+                    <span class="nomFac">{{ mobilite.nom }}</span>
+                </div>
+
+                <div class="property text-secondary" data-label="Nom Fac:">
+                    <label for="nom">Prenom:</label>
+    
+                    <span class="prenom">{{ mobilite.prenom }}</span>
+                </div>
+                <div class="property text-secondary" data-label="Gmail:">
+                    <label for="nom">Gmail:</label>
+    
+                    <span class="gmail">{{ mobilite.gmail }}</span>
+                </div>
+                <div class="property text-secondary" data-label="Nom Fac:">
+                    <label for="nom">Moyenne 1ére fac:</label>
+    
+                    <span class="nomFac">{{ mobilite.moyenne1 }}</span>
+                </div>
+                <div class="property text-secondary" data-label="Pays:">
+                    <label for="nom">Moyenne 2ére fac:</label>
+    
+                    <span class="pays">{{ mobilite.moyenne2 }}</span>
+                </div>
+                <div class="property text-secondary" data-label="Type Mobilité:">
+                    <label for="nom">Moyenne 3ére fac:</label>
+    
+                    <span class="typeMobilite">{{ mobilite.moyenne3 }}</span>
+                </div>
+                <div class="property text-secondary" data-label="Identifiant Esprit:">
+                    <label for="nom">Identifiant Esprit:</label>
+    
+                    <span class="identifiantEsprit">{{ mobilite.identifiantEsprit }}</span>
+                </div>
+                <!-- ... Ajoutez les autres propriétés ici ... -->
+                <div class="property text-secondary" data-label="Niveau A:">
+                    <label for="nom">Niveau Anglais:</label>
+    
+                    <span class="niveaua">{{ mobilite.niveaua }}</span>
+                </div>
+                <div class="property text-secondary" data-label="Niveau F:">
+                    <label for="nom">Niveau Francais:</label>
+    
+                    <span class="niveauf">{{ mobilite.niveauf }}</span>
+                </div>
+                <div class="property text-secondary" data-label="Niveau F:">
+                    <label for="nom">Option:</label>
+    
+                    <span class="niveauf">{{ mobilite.option }}</span>
+                </div>
+                <div class="property text-secondary" data-label="Niveau F:">
+                    <label for="nom">Departement : </label>
+                    <span class="niveauf">{{ mobilite.departement }}</span>
+                </div>
+    
+                <div class="property text-secondary" data-label="Fichier CV:">
+                    <span class="fichierCV">{{ mobilite.fichierCV }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+

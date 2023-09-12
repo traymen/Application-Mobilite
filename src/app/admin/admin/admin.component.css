@@ -1,0 +1,425 @@
+.form-container {
+    width: 400px;
+    margin-left: 500px;
+    border-radius: 0.75rem;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 2rem;
+    color: rgba(243, 244, 246, 1);
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.form {
+    margin-top: 1.5rem;
+}
+
+.input-group {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.input-group label {
+    display: block;
+    color: rgba(156, 163, 175, 1);
+    margin-bottom: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(55, 65, 81, 1);
+    outline: 0;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 0.75rem 1rem;
+    color: rgba(243, 244, 246, 1);
+}
+
+.input-group input:focus {
+    border-color: rgba(167, 139, 250);
+}
+
+.forgot {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgba(156, 163, 175, 1);
+    margin: 8px 0 14px 0;
+}
+
+.forgot a,
+.signup a {
+    color: rgba(243, 244, 246, 1);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot a:hover,
+.signup a:hover {
+    text-decoration: underline rgba(167, 139, 250, 1);
+}
+
+.sign {
+    display: block;
+    width: 100%;
+    background-color: rgba(167, 139, 250, 1);
+    padding: 0.75rem;
+    text-align: center;
+    color: rgba(17, 24, 39, 1);
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+}
+
+.social-message {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.line {
+    height: 1px;
+    flex: 1 1 0%;
+    background-color: rgba(55, 65, 81, 1);
+}
+
+.social-message .message {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgba(156, 163, 175, 1);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons .icon {
+    border-radius: 0.125rem;
+    padding: 0.75rem;
+    border: none;
+    background-color: transparent;
+    margin-left: 8px;
+}
+
+.social-icons .icon svg {
+    height: 1.25rem;
+    width: 1.25rem;
+    fill: #fff;
+}
+
+.signup {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgba(156, 163, 175, 1);
+}
+
+
+
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgb(7, 57, 70);
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    font-weight: bold;
+    font-size: 35px;
+    
+            max-width: 0%;
+            /* Assure que l'image ne dépasse pas la largeur définie */
+            max-height: 0%;
+        
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    font-size: medium;
+}
+
+.navbar-menu li {
+    font-size: medium;}
+
+.navbar-menu li:last-child {
+    margin-right: 300px;
+        font-size: 40px;
+        
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #ccc;
+}
+.i {
+    display: flex;
+    align-items: center;
+}
+
+.i img {
+    width: 100px;
+    /* Largeur souhaitée de l'image */
+    height: auto;
+    /* Garde le rapport hauteur/largeur de l'image */
+    margin-right: 10px;
+    /* Espacement horizontal entre l'image et le texte */
+}
+
+
+/* Content styles */
+.content {
+    margin-left: 250px;
+    /* La même largeur que la sidebar */
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* user-login.component.css */
+.mm{
+    margin-left: 115px;
+}
+.user-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #568d91;
+    border: 1px solid #80b3ca;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-form h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border-color: #00bcd4;
+}
+
+button[type="submit"] {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0194a8;
+}
+
+.signup {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+}
+
+.left-column {
+    width: 200px;
+    /* Largeur souhaitée */
+    height: auto;
+    /* Garde le rapport hauteur/largeur de l'image */
+    margin: 200px;
+    margin-top: 40px;
+    /* Marge autour de l'image (haut, bas, gauche, droite) */
+    display: flex;
+    justify-content: center;
+    /* Centre horizontalement l'image */
+    align-items: center;
+    /* Centre verticalement l'image */
+}
+
+.left-column img {
+    max-width: 200%;
+    /* Assure que l'image ne dépasse pas la largeur définie */
+    max-height: 150%;
+    /* Assure que l'image ne dépasse pas la hauteur définie */
+    transform: translateX(0%);
+}
+
+.right-column {
+    flex: 1;
+    /* Prend autant d'espace que possible */
+    padding: 20px;
+        transform: translateX(-10%);
+            /* Ramène l'élément de moitié de sa largeur vers la gauche */
+            margin-top: -15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Réinitialisation des marges et des rembourrages par défaut */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour l'en-tête de navigation */
+#nav-wrapper {
+    background-color: #09c0a8;
+    color: white;
+    width: 1200px;
+    height: 600px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-nav {
+    display: none;
+}
+
+/* Styles pour les liens de navigation */
+.nav.right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #00eeff;
+    /* Couleur au survol et en actif */
+}
+
+/* Styles pour les sections principales */
+main {
+    padding: 20px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajoutez d'autres styles selon vos besoins pour les sections "home", "about", "work" et "contact" */
+

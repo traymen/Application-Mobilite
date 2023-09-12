@@ -1,0 +1,190 @@
+
+/* user-login.component.css */
+.mm {
+    margin-left: 120px;
+}
+.user-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #5f5656;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+.user-form1 {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #5f5656;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.user-form h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border-color: #00bcd4;
+}
+
+button[type="submit"] {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0194a8;
+}
+
+.signup {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* image et formuulaire */
+.container {
+    display: flex;
+}
+
+.left-column {
+    flex: 1;
+    /* Prend autant d'espace que possible */
+    padding: 20px;
+max-width: 50%}
+
+.right-column {
+    flex: 1;
+    /* Prend autant d'espace que possible */
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Réinitialisation des marges et des rembourrages par défaut */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour l'en-tête de navigation */
+#nav-wrapper {
+    background-color: #333;
+    color: white;
+    width: 1200px;
+    height: 800px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-nav {
+    display: none;
+}
+
+/* Styles pour les liens de navigation */
+.nav.right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #00eeff;
+    /* Couleur au survol et en actif */
+}
+
+/* Styles pour les sections principales */
+main {
+    padding: 20px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajoutez d'autres styles selon vos besoins pour les sections "home", "about", "work" et "contact" */

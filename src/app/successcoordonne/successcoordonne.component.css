@@ -1,0 +1,21 @@
+.dialog-container {
+    border: 2px solid #3498db;
+    /* Couleur et épaisseur de la bordure */
+    border-radius: 10px;
+    /* Arrondir les coins de l'élément */
+    padding: 20px;
+    /* Espace à l'intérieur de l'élément */
+    width: 300px;
+    /* Largeur de l'élément */
+    margin: 0 auto;
+    /* Centrer l'élément horizontalement */
+    text-align: center;
+    /* Centrer le texte à l'intérieur */
+}
+
+.dialog-title {
+    font-size: 18px;
+    /* Taille de la police du titre */
+    color: #3498db;
+    /* Couleur du texte du titre */
+}

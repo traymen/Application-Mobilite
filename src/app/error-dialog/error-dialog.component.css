@@ -1,0 +1,13 @@
+.dialog-container {
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.dialog-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.dialog-message {
+    font-size: 18px;
+}

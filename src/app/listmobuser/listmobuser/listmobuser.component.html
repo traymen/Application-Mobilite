@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar and Sidebar</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-logo">Esprit Mobilité</div>
+            <ul class="navbar-menu">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">À Propos</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button (click)="onSubmit()" class="inscription-button btn btn-primary">Déconnexion</button>
+</li>
+
+            </ul>
+        </div>
+    </nav>
+    <header id="nav-wrapper">
+<div >
+    <h2 class="primary">Liste des mobilités</h2>
+</div>
+<div class="container">
+
+
+    
+    <div class="mobilite-list">
+       
+        <div *ngFor="let mobilite of allmobilite" class="mobilite-card">
+            
+            <div class="property text-secondary" data-label="Nom de la faculté:">
+                <span class="nomFac">{{ mobilite.nomFac }}</span>
+            </div>
+            <div class="property text-secondary" data-label="Pays:">
+                <span class="pays">{{ mobilite.pays }}</span>
+            </div>
+            <div class="property text-secondary" data-label="Type de mobilité:">
+                <span class="typeMobilite">{{ mobilite.typeMobilite }}</span>
+            </div>
+            <div class="property text-secondary" data-label="Domaine:">
+                <span class="domaine">{{ mobilite.domaine }}</span>
+            </div>
+            <div class="property text-secondary" data-label="Option:">
+                <span class="option">{{ mobilite.option }}</span>
+            </div>
+            <div class="property text-secondary" data-label="Date Début:">
+                <span class="dateD">{{ mobilite.dateD | date: 'mediumDate' }}</span>
+            </div>
+            <div class="property text-secondary" data-label="Date Fin:">
+                <span class="dateF">{{ mobilite.dateF | date: 'mediumDate' }}</span>
+            </div>
+            <button (click)="detail(mobilite)" class="inscription-button btn btn-primary">Inscription</button>
+        </div>
+    </div>
+
+</div>
+    </header>
+</body>
+</html>
+
+
+
+

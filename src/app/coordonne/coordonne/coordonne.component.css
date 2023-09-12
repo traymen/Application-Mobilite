@@ -1,0 +1,175 @@
+.coordonne-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.coordonne-forme {
+    max-width: 500px;
+   
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: -250px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+* Reset some default styles */ body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgb(10, 88, 107);
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #ccc;
+}
+
+
+
+/* Content styles */
+.content {
+    margin-left: 250px;
+    /* La même largeur que la sidebar */
+    padding: 20px;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+}
+
+.left-column {
+    flex: 1;
+    /* Prend autant d'espace que possible */
+    padding: 20px;
+    max-width: 50%;
+    margin-bottom: 20px;
+   height: 1000px;
+}
+
+.right-column {
+    flex: 1;
+    /* Prend autant d'espace que possible */
+    padding: 20px;
+}
+
+
+
+
+
+
+
+.button-invalid {
+    background-color: red;
+    color: white;
+border: none;
+    padding: 10px 20px;
+    cursor: pointer;}
+
+.button-valid {
+    background-color: green;
+    color: white;
+    border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+}
+
+/* Styles pour le survol */
+.button-invalid:hover {
+    background-color: darkred;
+}
+
+.button-valid:hover {
+    background-color: darkgreen;
+}
